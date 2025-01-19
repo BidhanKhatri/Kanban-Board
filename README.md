@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+### Kanban Board:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Kanban is derived from Japanense word, which means arranging the things is a proper way.
+- Kanban board helps to arrange the data in very systematical manner.
 
-Currently, two official plugins are available:
+### Project Implementation:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- For this project I have used the platform called React Js with TypeScript.
+- I have used React JS because of its flexibility and scalability for frontend development.
+- DND Kit core has been used for implementation of drag and drop feature.
+- Type script has been used for type saftey.
 
-## Expanding the ESLint configuration
+### Steps of Implementation:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Created a Components folder and added created required components like Kanban.tsx, ContentContainer.tsx, SkeletonContainer.tsx and TaskCard.tsx
+- Wrapped the ContentContainer with "DndContex" and content text with "SortableContext" for implemation of drag and drop features
+- Kanban component is used for performing all the logics like, add, updating and deleting the titles, content etc.
+- ContentContainer was used for displaying the all components like Header, TaskCard and Footer.
+- TaskCard was used to display the task which has been added by the user.
+- SkeletonContainer is used to display when there is no data.
 
-- Configure the top-level `parserOptions` property like this:
+### Hosted on Netlify for demo:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- After performing testing and optimizing, I finally hosted my project sample on Netlify,<br /> Access This project using This link <br /> <a href="https://bidhan-kanban.netlify.app/"> Kanban Board </a>

@@ -1,5 +1,3 @@
-import React from "react";
-
 const SkeletonContainers = () => {
   return (
     <div className="flex gap-4">
